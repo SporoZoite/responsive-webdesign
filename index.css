@@ -1,0 +1,60 @@
+body {
+    font-family: 'Courier New', Courier, monospace;
+    color: cornsilk;
+    font-weight: bold;
+    
+   }
+
+
+/* Check if the screen size is at max 300px */
+@media only screen and (max-width: 300px) {
+    body {
+      background-color: red;
+      font-size: 10px;
+    }
+    #small,#medium, #large {
+        display: block;
+    }
+  }
+
+/* Check if the screen size is at max 780px and at min 300px */
+@media only screen and (max-width: 780px) and (min-width: 300px) {
+    body {
+      background-color: green;
+      font-size: 16px;
+    }
+    #small {
+        display: inline-block;
+        width:65%;
+        /* pour rendre invisible  display: none; */
+    }
+    #medium {
+      display: inline-block;
+      width:32%;
+    }
+    #large {
+      display: inline-block;
+      width:100%;
+}
+}
+
+ /* Check if the screen size is at least 780px */ 
+@media only screen and (min-width: 780px) {
+    body {
+      background-color: blue;
+      font-size: 18px;
+    }
+    #small {
+      display: inline-block;
+      width: 32%;
+   }
+    #medium {
+    display: inline-block;
+      width: 32%;
+   }
+    #large {
+    display: inline-block;
+      width: 32%;
+    }
+  }
+
